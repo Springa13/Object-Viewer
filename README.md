@@ -1,6 +1,18 @@
 # Construction of a 3D Object Viewer Using OpenGL
 
-## Challenges:
+## How to Use
+- Install MinGW
+- Add to Path
+- Place .lib files into MinGW lib folder
+- Use the following commands:
+
+```bash
+cmake . -G "MinGW Makefiles"
+mingw32-make
+./obj_loader.exe
+```
+
+## Challenges
 - Initialising a C++ OpenGL project
 - Using external libraries
 - CMake construction and utilisation
@@ -21,7 +33,7 @@ The first step was to create the necessary environment and directory system to b
 │   ├── glfw/glfw.h
 │   ├── glm/...
 ├── lib
-│   ├── glew32.lib
+│   ├── glew32s.lib
 │   ├── glfw3.lib
 │   ├── OpenGL32.lib
 ├── models
