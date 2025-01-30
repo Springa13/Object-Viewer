@@ -26,15 +26,18 @@ include_directories(
     ${CMAKE_SYSTEM_INCLUDE_PATH}
 )
 
+add_definitions(-DGLEW_STATIC)
+
 find_package(OpenGL REQUIRED)
 
 target_link_libraries(${PROJECT_NAME}
+    -lglew32s
     OpenGL::GL
     -lglfw3
-    -lglew32
+    
 )
 
 # Output executable to a specific folder
 set_target_properties(${PROJECT_NAME} PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}
 )
