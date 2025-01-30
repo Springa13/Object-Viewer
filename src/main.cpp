@@ -1,8 +1,8 @@
 #include "main.h"
 
 int main() {
-    const int width = 1400;
-    const int height = 800;
+    const int width = 800;
+    const int height = 500;
 
     if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW" << std::endl;
@@ -87,7 +87,7 @@ int main() {
         GLint viewport[4];
         glGetIntegerv(GL_VIEWPORT, viewport);
 
-        float moveSpeed = (viewport[2] + viewport[3]) / 800;
+        float moveSpeed = (viewport[2] + viewport[3]) / 300;
         
         if (glfwGetKey(window, GLFW_KEY_UP) == (GLFW_PRESS || GLFW_REPEAT)) {
             angleZ = angleZ + glm::radians(moveSpeed);

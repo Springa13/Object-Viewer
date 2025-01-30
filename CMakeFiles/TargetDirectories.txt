@@ -1,3 +1,0 @@
-C:/Users/matts/Desktop/OGL/CMakeFiles/obj_loader.dir
-C:/Users/matts/Desktop/OGL/CMakeFiles/edit_cache.dir
-C:/Users/matts/Desktop/OGL/CMakeFiles/rebuild_cache.dir
