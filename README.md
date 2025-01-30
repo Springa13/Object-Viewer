@@ -430,4 +430,3 @@ GLuint compileShader(GLenum type, const char* source) {
     }
     return shader;
 }
-```
